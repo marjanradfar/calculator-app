@@ -23,15 +23,46 @@
     </div>
     <div class="calculator-body">
         <div class="calculator-body__input">
-            <div class="calculator-body__input--bill">
-                <label class="calculator-body__input--bill-title">bill</label>
-                <input class="calculator-body__input--bill-input" type="number">
-                <img class="calculator-body__input--bill-icon" src="assets/images/icon/icon-dollar.svg" />
+            <div class="input-number">
+                <label class="input-number__title">Bill</label>
+                <input class="input-number__input" type="number" placeholder="0">
+                <img class="input-number__icon" src="assets/images/icon/icon-dollar.svg"/>
             </div>
+            <div class="calculator-body__input--select-tip">
+                <span class="calculator-body__input--select-tip-title">Select Tip %</span>
+                <div class="container-btn">
+                    <button class="container-btn__item">5%</button>
+                    <button class="container-btn__item">10%</button>
+                    <button class="container-btn__item">15%</button>
+                    <button class="container-btn__item">25%</button>
+                    <button class="container-btn__item">50%</button>
+                    <input class="container-btn__item input-custom" type="number" placeholder="custom">
+                </div>
+                <div class="input-number number-people">
+                    <label class="input-number__title">Number of People</label>
+                    <span class="input-number__erorr">Can’t be zero</span>
+                    <input class="input-number__input" type="number" placeholder="0">
+                    <img class="input-number__icon" src="assets/images/icon/icon-person.svg"/>
+                </div>
 
+            </div>
         </div>
         <div class="calculator-body__result">
-
+            <div class="calculator-body__result--show-value">
+                <div class="calculator-body__result--show-value-title">
+                    <span class="title">Tip Amount</span>
+                    <span class="subtitle">/ person</span>
+                </div>
+                <span class="calculator-body__result--show-value-value">32.79</span>
+            </div>
+            <div class="calculator-body__result--show-value total">
+                <div class="calculator-body__result--show-value-title">
+                    <span class="title">Total</span>
+                    <span class="subtitle">/ person</span>
+                </div>
+                <span class="calculator-body__result--show-value-value">32.79</span>
+            </div>
+            <button class="btn-result">RESET</button>
         </div>
     </div>
 </main>
