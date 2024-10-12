@@ -1,0 +1,50 @@
+@import "base";
+@import "variable";
+@import "general";
+
+.main {
+
+  .logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10rem 0 5rem 0;
+  }
+
+  .calculator-body {
+    background-color: $color-white;
+    padding: 2rem;
+    border-radius: 1.5rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+
+    &__input {
+      position: relative;
+
+      &--bill {
+        display: flex;
+        flex-direction: column;
+
+        &-input {
+          padding: 8px 18px;
+          direction: rtl;
+          font-size: 1.5rem;
+          font-weight: bold;
+          color: $Very_dark_cyan;
+        }
+
+        &-icon {
+          position: absolute;
+          top: auto;
+          bottom: 8px;
+          right: auto;
+          left: 18px;
+        }
+
+      }
+
+    }
+  }
+}
+

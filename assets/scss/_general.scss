@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+body {
+  background-color: $Light_grayish_cyan;
+  font-family: "Space Mono", monospace;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin-top: 2rem;
+
+  > a {
+    color: hsl(228, 45%, 44%);
+  }
+}
+
+
+//input type text
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+  -webkit-transition: 0.5s;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+  -webkit-transition: 0.5s;
+  outline: none;
+  border: none;
+  background-color: $bg_input;
+  border-radius: $radiuse-5;
+
+  &:focus {
+    border: 1px solid $border_focus;
+  }
+}
+
+
+
+
