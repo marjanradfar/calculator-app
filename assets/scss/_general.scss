@@ -38,8 +38,14 @@ input[type=number] {
   }
 }
 
+input {
+  display: inline-block;
+
+}
+
 //button
 button {
+  display: inline-block;
   border: none;
   background-color: transparent;
   cursor: pointer;

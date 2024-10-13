@@ -46,13 +46,19 @@ input[type=number]:focus {
   border: 1px solid #26C2AE;
 }
 
+input {
+  display: inline-block;
+}
+
 button {
+  display: inline-block;
   border: none;
   background-color: transparent;
   cursor: pointer;
 }
 
 .main .logo {
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -69,7 +75,15 @@ button {
   height: 30rem;
   margin: 0 auto;
 }
+@media screen and (max-width: 991px) {
+  .main .calculator-body {
+    grid-template-columns: 1fr;
+    width: 100%;
+    height: 100%;
+  }
+}
 .main .calculator-body .input-number {
+  width: 100%;
   display: flex;
   flex-direction: column;
   position: relative;
@@ -109,7 +123,13 @@ button {
   margin-top: 2.5rem;
 }
 .main .calculator-body__input {
+  width: 100%;
   padding: 1rem;
+}
+@media screen and (max-width: 991px) {
+  .main .calculator-body__input {
+    padding: 0rem;
+  }
 }
 .main .calculator-body__input--select-tip-title {
   display: block;
@@ -120,11 +140,18 @@ button {
   margin-top: 2.5rem;
 }
 .main .calculator-body__input--select-tip .container-btn {
+  width: 100%;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr);
   grid-column-gap: 16px;
   grid-row-gap: 16px;
+}
+@media screen and (max-width: 425px) {
+  .main .calculator-body__input--select-tip .container-btn {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
 }
 .main .calculator-body__input--select-tip .container-btn__item {
   width: 100%;
@@ -147,11 +174,13 @@ button {
   text-align: center;
 }
 .main .calculator-body__result {
+  width: 100%;
   background-color: hsl(183, 100%, 15%);
   border-radius: 15px;
   padding: 2.5rem;
 }
 .main .calculator-body__result--show-value {
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
