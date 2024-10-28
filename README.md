@@ -50,7 +50,7 @@ feel free to remove this entire section.**
 ### Links
 
 - Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [Add live site URL here](https://marjanradfar.github.io/calculator-app/)
 
 ## My process
 
@@ -61,9 +61,6 @@ feel free to remove this entire section.**
 - Flexbox
 - CSS Grid
 - Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
 
 **Note: These are just examples. Delete this note and replace the list above with your own choices**
 
