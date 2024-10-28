@@ -30,7 +30,7 @@
 
 ## Author
 
-- Website - [marjanradfar.ir](www.marjanradfar.ir)
+- Website - [marjanradfar.ir](https://www.marjanradfar.ir)
 - Frontend Mentor - [@devedoping](https://devedoping.ir/)
-- Linkedin - [@marjan--radfar](www.linkedin.com/in/marjan--radfar)
+- Linkedin - [@marjan--radfar](https://www.linkedin.com/in/marjan--radfar/)
 
