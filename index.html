@@ -24,24 +24,24 @@
     <div class="calculator-body">
         <div class="calculator-body__input">
             <div class="input-number">
-                <label class="input-number__title">Bill</label>
-                <input class="input-number__input" type="number" placeholder="0">
+                <label for="input" class="input-number__title">Bill</label>
+                <input id="input" class="input-number__input" type="number" placeholder="0">
                 <img class="input-number__icon" src="assets/images/icon/icon-dollar.svg"/>
             </div>
             <div class="calculator-body__input--select-tip">
-                <span class="calculator-body__input--select-tip-title">Select Tip %</span>
+                <label for="customTip" class="calculator-body__input--select-tip-title">Select Tip %</label>
                 <div class="container-btn">
                     <button class="container-btn__item">5%</button>
                     <button class="container-btn__item">10%</button>
                     <button class="container-btn__item">15%</button>
                     <button class="container-btn__item">25%</button>
                     <button class="container-btn__item">50%</button>
-                    <input class="container-btn__item input-custom" type="number" placeholder="custom">
+                    <input id="customTip" class="container-btn__item input-custom" type="number" placeholder="custom">
                 </div>
                 <div class="input-number number-people">
-                    <label class="input-number__title">Number of People</label>
-                    <span class="input-number__erorr">Can’t be zero</span>
-                    <input class="input-number__input" type="number" placeholder="0">
+                    <label for="people" class="input-number__title">Number of People</label>
+                    <span id="erorr" class="input-number__erorr"></span>
+                    <input id="people" class="input-number__input" type="number" placeholder="0">
                     <img class="input-number__icon" src="assets/images/icon/icon-person.svg"/>
                 </div>
 
@@ -53,16 +53,16 @@
                     <span class="title">Tip Amount</span>
                     <span class="subtitle">/ person</span>
                 </div>
-                <span class="calculator-body__result--show-value-value">32.79</span>
+                <span class="calculator-body__result--show-value-value tip-value"></span>
             </div>
             <div class="calculator-body__result--show-value total">
                 <div class="calculator-body__result--show-value-title">
                     <span class="title">Total</span>
                     <span class="subtitle">/ person</span>
                 </div>
-                <span class="calculator-body__result--show-value-value">32.79</span>
+                <span class="calculator-body__result--show-value-value tip-value"></span>
             </div>
-            <button class="btn-result">RESET</button>
+            <button class="btn-reset">RESET</button>
         </div>
     </div>
 </main>
@@ -91,5 +91,6 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
     Coded by <a href="#">Marjan Radfar</a>.
 </div>
+<script src="assets/js/main.js"></script>
 </body>
 </html>
