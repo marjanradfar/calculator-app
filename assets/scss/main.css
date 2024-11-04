@@ -172,6 +172,12 @@ button {
     grid-template-rows: repeat(3, 1fr);
   }
 }
+.main .calculator-body__input--select-tip .container-btn .active {
+  background-color: #26C2AE;
+  color: hsl(183, 100%, 15%);
+  transition: transform 0.3s ease-in-out;
+  transform: scale(0.98);
+}
 .main .calculator-body__input--select-tip .container-btn__item {
   width: 100%;
   background-color: hsl(183, 100%, 15%);
@@ -179,14 +185,7 @@ button {
   font-size: 1.5rem;
   font-weight: bold;
   border-radius: 5px;
-}
-.main .calculator-body__input--select-tip .container-btn__item:active {
-  transition: transform 0.3s ease-in-out;
-  transform: scale(0.98);
-}
-.main .calculator-body__input--select-tip .container-btn__item.active {
-  background-color: #26C2AE;
-  color: hsl(183, 100%, 15%);
+  transition: all 0.3s ease-in-out;
 }
 .main .calculator-body__input--select-tip .container-btn__item.input-custom {
   background-color: #F3F9FA;

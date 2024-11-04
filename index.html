@@ -1,77 +1,78 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- displays site properly based on user's device -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!-- displays site properly based on user's device -->
 
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/icon/favicon-32x32.png">
-    <link rel="stylesheet" href="assets/scss/main.css">
+     <link rel="icon" type="image/png" sizes="32x32" href="assets/images/icon/favicon-32x32.png">
+     <link rel="stylesheet" href="assets/scss/main.css">
 
-    <title>Frontend Mentor | Tip calculator app</title>
+     <title>Frontend Mentor | Tip calculator app</title>
 
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <style>
+     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+     <style>
 
-    </style>
-</head>
-<body>
+     </style>
+ </head>
+ <body>
 
-<main class="main">
-    <div class="logo">
-        <img class="logo_img" src="assets/images/logo/logo.svg" alt="logo">
-    </div>
-    <div class="calculator-body">
-        <div class="calculator-body__input">
-            <div class="input-number">
-                <label for="input" class="input-number__title">Bill</label>
-                <input id="input" class="input-number__input" type="number" placeholder="0">
-<!--                <img class="input-number__icon" src="assets/images/icon/icon-dollar.svg"/>-->
-            </div>
-            <div class="calculator-body__input--select-tip">
-                <label for="customTip" class="calculator-body__input--select-tip-title">Select Tip %</label>
-                <div class="container-btn">
-                    <button class="container-btn__item">5%</button>
-                    <button class="container-btn__item">10%</button>
-                    <button class="container-btn__item">15%</button>
-                    <button class="container-btn__item">25%</button>
-                    <button class="container-btn__item">50%</button>
-                    <input id="customTip" class="container-btn__item input-custom" type="number" placeholder="custom">
-                </div>
-                <div class="input-number number-people">
-                    <label for="people" class="input-number__title">Number of People</label>
-                    <span id="erorr" class="input-number__erorr"></span>
-                    <input id="people" class="input-number__input" type="number" placeholder="0">
-<!--                    <img class="input-number__icon" src="assets/images/icon/icon-person.svg"/>-->
-                </div>
-            </div>
-        </div>
-        <div class="calculator-body__result">
-            <div class="container-show-value">
-                <div class="calculator-body__result--show-value">
-                    <div class="calculator-body__result--show-value-title">
-                        <span class="title">Tip Amount</span>
-                        <span class="subtitle">/ person</span>
-                    </div>
-                    <span class="calculator-body__result--show-value-tip-amount calculator-body__result--show-value-value"></span>
-                </div>
-                <div class="calculator-body__result--show-value total">
-                    <div class="calculator-body__result--show-value-title">
-                        <span class="title">Total</span>
-                        <span class="subtitle">/ person</span>
-                    </div>
-                    <span class="calculator-body__result--show-value-total-person calculator-body__result--show-value-value"></span>
-                </div>
-            </div>
-            <button class="btn-reset">RESET</button>
-        </div>
-    </div>
-</main>
+ <main class="main">
+     <div class="logo">
+         <img class="logo_img" src="assets/images/logo/logo.svg" alt="logo">
+     </div>
+     <div class="calculator-body">
+         <div class="calculator-body__input">
+             <div class="input-number">
+                 <label for="input" class="input-number__title">Bill</label>
+                 <span id="erorrBill" class="input-number__erorr"></span>
+                 <input id="input" class="input-number__input" type="number" placeholder="0">
+                 <!--                <img class="input-number__icon" src="assets/images/icon/icon-dollar.svg"/>-->
+             </div>
+             <div class="calculator-body__input--select-tip">
+                 <label for="customTip" class="calculator-body__input--select-tip-title">Select Tip %</label>
+                 <div class="container-btn">
+                     <button class="container-btn__item">5%</button>
+                     <button class="container-btn__item">10%</button>
+                     <button class="container-btn__item">15%</button>
+                     <button class="container-btn__item">25%</button>
+                     <button class="container-btn__item">50%</button>
+                     <input id="customTip" class="container-btn__item input-custom" type="number" placeholder="custom">
+                 </div>
+                 <div class="input-number number-people">
+                     <label for="people" class="input-number__title">Number of People</label>
+                     <span id="erorr" class="input-number__erorr"></span>
+                     <input id="people" class="input-number__input" type="number">
+                     <!--                    <img class="input-number__icon" src="assets/images/icon/icon-person.svg"/>-->
+                 </div>
+             </div>
+         </div>
+         <div class="calculator-body__result">
+             <div class="container-show-value">
+                 <div class="calculator-body__result--show-value">
+                     <div class="calculator-body__result--show-value-title">
+                         <span class="title">Tip Amount</span>
+                         <span class="subtitle">/ person</span>
+                     </div>
+                     <span class="calculator-body__result--show-value-tip-amount calculator-body__result--show-value-value"></span>
+                 </div>
+                 <div class="calculator-body__result--show-value total">
+                     <div class="calculator-body__result--show-value-title">
+                         <span class="title">Total</span>
+                         <span class="subtitle">/ person</span>
+                     </div>
+                     <span class="calculator-body__result--show-value-total-person calculator-body__result--show-value-value"></span>
+                 </div>
+             </div>
+             <button class="btn-reset">RESET</button>
+         </div>
+     </div>
+ </main>
 
-<div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-    Coded by <a href="#">Marjan Radfar</a>.
-</div>
-<script src="assets/js/main.js"></script>
-</body>
-</html>
+ <div class="attribution">
+     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+     Coded by <a href="#">Marjan Radfar</a>.
+ </div>
+ <script src="assets/js/main.js"></script>
+ </body>
+ </html>

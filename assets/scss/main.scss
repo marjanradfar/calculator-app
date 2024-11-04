@@ -56,6 +56,7 @@
         text-align: right;
         border: 2px solid transparent;
         background-image: url("assets/images/icon/icon-dollar.svg");
+
         &:focus {
           border: 2px solid $border_focus;
         }
@@ -87,7 +88,8 @@
 
       &.number-people {
         margin-top: 2.5rem;
-        .input-number__input{
+
+        .input-number__input {
           background-image: url("assets/images/icon/icon-person.svg");
         }
       }
@@ -122,6 +124,12 @@
             grid-template-columns: repeat(2, 1fr);
             grid-template-rows: repeat(3, 1fr);
           }
+          .active {
+            background-color: $btn_submit;
+            color: $Very_dark_cyan;
+            transition: transform 0.3s ease-in-out;
+            transform: scale(0.98);
+          }
 
           &__item {
             width: 100%;
@@ -130,16 +138,8 @@
             font-size: 1.5rem;
             font-weight: bold;
             border-radius: $radiuse-5;
+            transition: all 0.3s ease-in-out;
 
-            &:active {
-              transition: transform 0.3s ease-in-out;
-              transform: scale(0.98);
-            }
-
-            &.active {
-              background-color: $btn_submit;
-              color: $Very_dark_cyan;
-            }
 
             &.input-custom {
               background-color: $bg_input;
