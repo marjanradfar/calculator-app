@@ -26,7 +26,7 @@
             <div class="input-number">
                 <label for="input" class="input-number__title">Bill</label>
                 <input id="input" class="input-number__input" type="number" placeholder="0">
-                <img class="input-number__icon" src="assets/images/icon/icon-dollar.svg"/>
+<!--                <img class="input-number__icon" src="assets/images/icon/icon-dollar.svg"/>-->
             </div>
             <div class="calculator-body__input--select-tip">
                 <label for="customTip" class="calculator-body__input--select-tip-title">Select Tip %</label>
@@ -42,50 +42,31 @@
                     <label for="people" class="input-number__title">Number of People</label>
                     <span id="erorr" class="input-number__erorr"></span>
                     <input id="people" class="input-number__input" type="number" placeholder="0">
-                    <img class="input-number__icon" src="assets/images/icon/icon-person.svg"/>
+<!--                    <img class="input-number__icon" src="assets/images/icon/icon-person.svg"/>-->
                 </div>
-
             </div>
         </div>
         <div class="calculator-body__result">
-            <div class="calculator-body__result--show-value">
-                <div class="calculator-body__result--show-value-title">
-                    <span class="title">Tip Amount</span>
-                    <span class="subtitle">/ person</span>
+            <div class="container-show-value">
+                <div class="calculator-body__result--show-value">
+                    <div class="calculator-body__result--show-value-title">
+                        <span class="title">Tip Amount</span>
+                        <span class="subtitle">/ person</span>
+                    </div>
+                    <span class="calculator-body__result--show-value-tip-amount calculator-body__result--show-value-value"></span>
                 </div>
-                <span class="calculator-body__result--show-value-tip-amount calculator-body__result--show-value-value"></span>
-            </div>
-            <div class="calculator-body__result--show-value total">
-                <div class="calculator-body__result--show-value-title">
-                    <span class="title">Total</span>
-                    <span class="subtitle">/ person</span>
+                <div class="calculator-body__result--show-value total">
+                    <div class="calculator-body__result--show-value-title">
+                        <span class="title">Total</span>
+                        <span class="subtitle">/ person</span>
+                    </div>
+                    <span class="calculator-body__result--show-value-total-person calculator-body__result--show-value-value"></span>
                 </div>
-                <span class="calculator-body__result--show-value-total-person calculator-body__result--show-value-value"></span>
             </div>
             <button class="btn-reset">RESET</button>
         </div>
     </div>
 </main>
-
-<!--Bill-->
-
-<!--Select Tip %-->
-<!--5%-->
-<!--10%-->
-<!--15%-->
-<!--25%-->
-<!--50%-->
-<!--Custom-->
-
-<!--Number of People-->
-
-<!--Tip Amount-->
-<!--/ person-->
-
-<!--Total-->
-<!--/ person-->
-
-<!--Reset-->
 
 <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.

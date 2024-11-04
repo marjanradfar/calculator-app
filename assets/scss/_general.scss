@@ -32,15 +32,14 @@ input[type=number] {
   border: none;
   background-color: $bg_input;
   border-radius: $radiuse-5;
-
-  &:focus {
-    border: 1px solid $border_focus;
-  }
 }
 
 input {
   display: inline-block;
+}
 
+input,button{
+  font-family: "Space Mono", monospace;
 }
 
 //button
