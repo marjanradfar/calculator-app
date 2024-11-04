@@ -83,7 +83,9 @@
         color: $color-erorr;
         font-size: 1rem;
         font-weight: bold;
-
+        @media screen and (max-width: 430px) {
+          position: relative;
+        }
       }
 
       &.number-people {
@@ -124,6 +126,7 @@
             grid-template-columns: repeat(2, 1fr);
             grid-template-rows: repeat(3, 1fr);
           }
+
           .active {
             background-color: $btn_submit;
             color: $Very_dark_cyan;
@@ -174,6 +177,10 @@
         display: flex;
         flex-direction: column;
         gap: 1rem;
+        @media screen and (max-width: 768px) {
+
+          align-items: flex-start;
+        }
       }
 
       &--show-value {
@@ -181,6 +188,10 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
+        @media screen and (max-width: 768px) {
+          flex-direction: column;
+          align-items: flex-start;
+        }
 
         &-title {
           display: flex;
@@ -206,6 +217,9 @@
           color: $btn_submit;
           font-size: 48px;
           font-weight: bold;
+          @media screen and (max-width: 425px) {
+            font-size: 38px;
+          }
         }
 
         &.total {
